@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Management - Country X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h2>Portfolio Manager</h2>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Companies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="home-content">
+            <h1>Welcome to Portfolio Manager</h1>
+            <p>Track and manage companies in Country X.</p>
+            <a href="#portfolio" class="cta-btn">Explore Companies</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>Company Portfolio</h2>
+        <input type="text" id="search" placeholder="Search Companies">
+        <div id="company-list">
+            <!-- Companies will be dynamically loaded here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Company Details Section -->
+    <section id="company-details" class="section" style="display:none;">
+        <h2>Company Details</h2>
+        <div id="details-content">
+            <!-- Details will be populated dynamically -->
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form action="submit_contact.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
